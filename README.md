@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Web, from zero
 
-# Run and deploy your AI Studio app
+给产品经理的互动式 Web 技术演进指南。通过 7 个阶段的可交互演示，解释网页如何工作、技术为什么变化，以及 PM 在每个阶段应该追问什么。
 
-This contains everything you need to run your app locally.
+## 本地运行
 
-View your app in AI Studio: https://ai.studio/apps/ae350925-fb80-4f88-ab23-6ae0aa7c028f
+```bash
+npm install
+npm run dev
+```
 
-## Run Locally
+## 内容维护
 
-**Prerequisites:**  Node.js
+- 阶段内容统一维护在 `src/data.ts`。
+- 页面结构与互动演示维护在 `src/App.tsx`。
+- 视觉样式维护在 `src/index.css`。
+- 每个阶段都包含：出现原因、系统链路、代价、PM 问题和术语。
 
+## 发布
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+项目为纯前端 Vite 应用，构建产物位于 `dist/`。目标站点为 [oopshui.github.io](https://oopshui.github.io/)。
